@@ -1,4 +1,4 @@
-import read_parquet
+import parquet_read
 
 from pyspark.sql import SparkSession
 
@@ -10,4 +10,4 @@ spark = SparkSession.builder \
 
 
 if __name__ == '__main__':
-    read_parquet.read_parquet(spark)
+    parquet_read.read_parquet(spark)
