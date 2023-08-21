@@ -4,7 +4,7 @@
 #     .config("spark.some.config.option", "some-value") \
 #     .getOrCreate()
 
-inputPath = './resources/users.parquet'
+inputPath = './input/users.parquet'
 
 
 def read_parquet(spark):

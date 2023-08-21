@@ -1,4 +1,4 @@
-import parquet_read
+from src import parquet_read
 
 from pyspark.sql import SparkSession
 
