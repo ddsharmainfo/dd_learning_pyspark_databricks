@@ -1,0 +1,13 @@
+*/__pycache__/*
+*?metastore_db/*
+*/spark_warehouse/*
+.mypy_cache/
+.DS_Store
+.idea
+.vscode/*
+config
+.idea/*
+.venv
+venv/*
+loaded_data/*
+derby.log
