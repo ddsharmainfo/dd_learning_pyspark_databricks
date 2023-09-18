@@ -4,7 +4,7 @@
 #     .config("spark.some.config.option", "some-value") \
 #     .getOrCreate()
 
-inputPath = './input/users.parquet'
+inputPath = './../input/users.parquet'
 
 
 def read_parquet(spark):
@@ -20,7 +20,6 @@ def read_parquet(spark):
     df.show(truncate=False)
 
     print('----- read_parquet method end -----')
-
 
 # if __name__ == "__main__":
 #     read_parquet()
