@@ -13,3 +13,4 @@ venv/*
 config
 loaded_data/*
 derby.log
+__pycache__/*
