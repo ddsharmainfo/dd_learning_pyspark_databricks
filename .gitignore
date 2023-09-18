@@ -3,7 +3,11 @@
 .idea
 .idea/*
 .venv
+.venv/*
 venv/*
+.run
+.run/*
+__pycache__/*
 */__pycache__/*
 *?metastore_db/*
 */spark_warehouse/*
@@ -13,4 +17,3 @@ venv/*
 config
 loaded_data/*
 derby.log
-__pycache__/*
