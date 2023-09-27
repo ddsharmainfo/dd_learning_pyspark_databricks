@@ -10,7 +10,7 @@ if __name__ == '__main__':
     schema = ["id", "Name"]
 
     rdd = spark.sparkContext.parallelize(data)
-    df = spark.createDataFrame(rdd, schema)
+    df = spark.createDataFrame(data, schema)
     df.show()
 
     spark.stop()

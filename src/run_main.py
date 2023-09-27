@@ -1,5 +1,5 @@
 from src import get_spark
-from src import parquet_read
+from src import read_parquet
 
 from pyspark.sql import SparkSession
 
@@ -12,9 +12,9 @@ from pyspark.sql import SparkSession
 
 
 if __name__ == '__main__':
-    spark, sc = get_spark.init_spark()
+    spark, sc = get_spark.get_spark_session()
     print('----- Main Application Started -----')
 
-    parquet_read.read_parquet(spark)
+    read_parquet.read_parquet(spark)
 
     print('----- Main Application Ended -----')
