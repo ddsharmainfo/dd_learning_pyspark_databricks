@@ -17,7 +17,6 @@ __pycache__/*
 */__pycache__/*
 *?metastore_db/*
 */spark_warehouse/*
-config
 loaded_data/*
 derby.log
 output

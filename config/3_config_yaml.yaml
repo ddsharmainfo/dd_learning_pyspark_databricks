@@ -1,0 +1,15 @@
+dev:
+  database:
+    host: dev-db-host
+    port: 5432
+    username: dev-user
+    password: dev-password
+  api_key: dev-api-key
+
+qa:
+  database:
+    host: qa-db-host
+    port: 5432
+    username: qa-user
+    password: qa-password
+  api_key: qa-api-key
