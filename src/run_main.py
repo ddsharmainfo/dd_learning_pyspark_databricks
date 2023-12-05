@@ -12,7 +12,8 @@ from pyspark.sql import SparkSession
 
 
 if __name__ == '__main__':
-    spark, sc = get_spark.get_spark_session()
+    app_name = ''
+    spark, sc = get_spark.get_spark_session(app_name)
     print('----- Main Application Started -----')
 
     read_parquet.read_parquet(spark)
