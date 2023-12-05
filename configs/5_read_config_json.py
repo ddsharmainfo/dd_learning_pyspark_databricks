@@ -3,8 +3,8 @@ import os
 
 
 DIR = os.path.dirname(__file__)
-CONFIG_PATH = os.path.join(DIR, './5_config_json.json')
-ENV = 'Dev'
+CONFIG_FILE = os.path.join(DIR, './5_config_json.json')
+ENVIRONMENT = 'Dev'
 
 
 def read_config(file_path, env):
@@ -16,7 +16,7 @@ def read_config(file_path, env):
     return key1, key2, key3
 
 
-key1, key2, key3 = read_config(CONFIG_PATH, ENV)
+key1, key2, key3 = read_config(CONFIG_FILE, ENVIRONMENT)
 
 print('Value for Key1: ', key1)
 print('Value for Key2: ', key2)

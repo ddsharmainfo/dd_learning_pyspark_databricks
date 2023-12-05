@@ -1,4 +1,9 @@
 import yaml
+import os
+
+DIR = os.path.dirname(__file__)
+CONFIG_FILE = os.path.join(DIR, './3_config_yaml.yaml')
+ENVIRONMENT = 'dev'
 
 
 def read_config(file_path, env):
@@ -7,13 +12,10 @@ def read_config(file_path, env):
     return config_data.get(env, {})
 
 
-config_file = './3_config_yaml.yaml'
-environment = 'dev'
-
-config_for_environment = read_config(config_file, environment)
+config_for_environment = read_config(CONFIG_FILE, ENVIRONMENT)
 
 # Print the config data
-print(f"Config for {environment} environment:")
+print(f"Config for {ENVIRONMENT} environment:")
 print(config_for_environment)
 
 # Access specific values

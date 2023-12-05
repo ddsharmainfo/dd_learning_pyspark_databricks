@@ -1,7 +1,11 @@
+import os
 import configparser
 
+DIR = os.path.dirname(__file__)
+CONFIG_FILE = os.path.join(DIR, './1_config.conf')
+
 config = configparser.ConfigParser()
-config.read('./1_config.conf')
+config.read(CONFIG_FILE)
 
 print('\n ===== Dev configs =====')
 ENV_VAR = 'DEV'
